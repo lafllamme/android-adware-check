@@ -36,23 +36,13 @@ Paste this into Claude, Codex, or another skill-compatible agent:
 Install the skill from https://github.com/lafllamme/android-adware-check (skills/android-adware-check).
 ```
 
-### Manual installation
-
-Clone the repository, then copy the skill to your agent's skills directory:
+Or install it from your terminal with the [Skills CLI](https://skills.sh/):
 
 ```bash
-git clone https://github.com/lafllamme/android-adware-check.git
-
-# Codex
-mkdir -p ~/.codex/skills
-cp -R android-adware-check/skills/android-adware-check ~/.codex/skills/
-
-# Claude Code
-mkdir -p ~/.claude/skills
-cp -R android-adware-check/skills/android-adware-check ~/.claude/skills/
+npx skills add lafllamme/android-adware-check
 ```
 
-For another agent, copy the `android-adware-check` folder to its skills directory. Restart the agent session if the skill does not appear.
+Choose your agent and installation scope when prompted. Node.js and `npx` are required.
 
 ## Use
 
